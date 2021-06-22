@@ -17,7 +17,7 @@ The following issues are currently reported:
 
 For completeness, ACL issues are reported regardless of whether authentication is enabled. Just keep in mind that if authentication is disabled then it doesn't matter what the ACL says.
 
-As a side note, it's worth mentioning the (functionally meaningless) distinction between private & public queues. A public queue can be enumerated remotely in a domain. A private queue cannot. That's the totality of the difference. A private queue has exactly the same functionality and accessibility as a public queue. Knowledge of a name is not a meaningful security boundary, so MSMQCheck does not report on it. You can tell whether the queue is private by looking to see if it has `\private$\` in its name or format name.
+As a side note, it's worth mentioning the (functionally meaningless) distinction between private & public queues. A public queue's name can be enumerated remotely in a domain. A private queue's name cannot. That's the totality of the difference. A private queue has exactly the same functionality and accessibility as a public queue. Knowledge of a name is not a meaningful security boundary, so MSMQCheck does not report on it. You can tell whether the queue is private by looking to see if it has `\private$\` in its name or format name.
 
 ## Example output
 
