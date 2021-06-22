@@ -28,7 +28,7 @@ namespace MSMQCheck
 
         static void Main(string[] args)
         {
-            Console.WriteLine("MSMQCheck v0.1.3");
+            Console.WriteLine("MSMQCheck v0.1.4");
             Console.WriteLine("Fetching queue names from WMI...");
             string[] queues;
             try
@@ -219,8 +219,6 @@ namespace MSMQCheck
             Console.WriteLine("Network encryption disallowed:");
             PrintQueueList(disabledEncryptionQueues);
             Console.WriteLine("Network encryption optional (default but insecure):");
-            PrintQueueList(optionalEncryptionQueues);
-            Console.WriteLine("Encryption optional:");
             PrintQueueList(optionalEncryptionQueues);
             Console.WriteLine("Anonymous user can write messages to queue:");
             PrintQueueList(anonymousWritableQueues);
